@@ -11,4 +11,4 @@ jobs:
         git config --global user.name '7aGiven'
         git config --global user.email 'a@gmail.com'
         git clone https://$SUPER_SECRET@github.com/7aGiven/PhigrosAction .
-    - run: sh main.sh $SUPER_SECRET
+    - run: set -e && sh main.sh $SUPER_SECRET
