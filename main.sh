@@ -4,11 +4,6 @@ then
 	echo "No update"
 	exit
 fi
-echo $1 > secret.txt
-ls -l
-cat secret.txt
-ls < secret.txt
-exit
 wget -nv -O Phigros.apk `cat url.txt`
 java -jar PhigrosMetadata-1.2.jar Phigros.apk
 dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
@@ -16,9 +11,11 @@ dotnet DummyDllToPythonTemplate.dll -a DummyDll/Assembly-CSharp.dll -i DummyDll/
 git clone https://github.com/7aGiven/Phigros_Resource/
 cd Phigros_Resource
 mv ../h.py .
+echo $1\n > secret.txt
+ls -l
 git config user.name "7aGiven"
 git config user.email 'a@gmail.com'
 git add .
 git commit -m "Github Action"
-git push < secret.txt
+git push < `pwd`/secret.txt
 echo $version > version_code.txt
