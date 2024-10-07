@@ -15,10 +15,10 @@ cd ..
 git clone https://$1@github.com/7aGiven/Phigros_Resource
 cd Phigros_Resource
 mv ../PhigrosAction/h.py .
-git commit -a -m "Github Action"
-git push
+echo 'Phigros_Resource push'
+git commit -am "Github Action" && git push
 
 cd ../PhigrosAction
 echo $version > version_code.txt
-git commit -a -m "Github Action"
-git push
+echo 'PhigrosAction push'
+git commit -am "Github Action" && git push
