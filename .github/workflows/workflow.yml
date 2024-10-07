@@ -6,7 +6,7 @@ jobs:
       SUPER_SECRET: ${{ secrets.PERS }}
     steps:
     - run: pwd
-    - run: ls -l
+    - run: ls -al
     - run: |
         git config --global user.name '7aGiven'
         git config --global user.email 'a@gmail.com'
