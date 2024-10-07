@@ -5,5 +5,5 @@ jobs:
     env:
       SUPER_SECRET: ${{ secrets.PERS }}
     steps:
-    - uses: actions/checkout@v4
+    - run: pwd
     - run: sh main.sh $SUPER_SECRET
