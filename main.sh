@@ -15,7 +15,11 @@ echo $1\n > secret.txt
 ls -l
 git config --global user.name '7aGiven'
 git config --global user.email 'a@gmail.com'
+git config --global -l
+echo 0
 git add .
+echo 1
 git commit -m "Github Action"
+echo 2
 git push < `pwd`/secret.txt
 echo $version > version_code.txt
