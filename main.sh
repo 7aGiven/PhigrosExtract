@@ -11,7 +11,6 @@ dotnet DummyDllToPythonTemplate.dll -a DummyDll/Assembly-CSharp.dll -i DummyDll/
 git clone https://github.com/7aGiven/Phigros_Resource/
 cd Phigros_Resource
 mv ../h.py .
-echo $SUPER_SECRET\n > secret.txt
 git config user.name "7aGiven"
 git config user.email 'a@gmail.com'
 git add .
