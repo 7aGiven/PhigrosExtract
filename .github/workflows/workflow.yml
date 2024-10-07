@@ -5,6 +5,5 @@ jobs:
     env:
       SUPER_SECRET: ${{ secrets.PERS }}
     steps:
-    - run: echo $SUPER_SECRET\n > secret.txt
-      #- uses: actions/checkout@v4
-    - run: sh main.sh
+    - uses: actions/checkout@v4
+    - run: sh main.sh $SUPER_SECRET
