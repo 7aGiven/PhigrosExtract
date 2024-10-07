@@ -8,4 +8,8 @@ jobs:
     #- run: java -jar PhigrosMetadata-1.1.jar Phigros.apk
     - run: dotnet --info
     - run: pwd
-    - run: find / -name 'global.json'
+    - run: ls '/home/runner/work/PhigrosAction'
+    - run: ls '/home/runner/work'
+    - run: ls '/home/runner'
+    - run: ls '/home'
+    - run: ls '/'
