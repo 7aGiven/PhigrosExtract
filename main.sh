@@ -13,8 +13,8 @@ cd Phigros_Resource
 mv ../h.py .
 echo $1\n > secret.txt
 ls -l
-git config user.name "7aGiven"
-git config user.email 'a@gmail.com'
+git config --global user.name '7aGiven'
+git config --global user.email 'a@gmail.com'
 git add .
 git commit -m "Github Action"
 git push < `pwd`/secret.txt
