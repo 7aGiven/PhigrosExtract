@@ -5,6 +5,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: main.sh
-    - uses: @actions/upload-artifact
+    - uses: actions/upload-artifact
       with:
         path: h.py
