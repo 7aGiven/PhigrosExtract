@@ -1,3 +1,4 @@
+set -e
 version=`python3 taptap.py`
 if [ "$version" = `cat version_code.txt` ]
 then
@@ -20,4 +21,4 @@ git push
 cd ../PhigrosAction
 echo $version > version_code.txt
 git commit -a -m "Github Action"
-#git push
+git push
