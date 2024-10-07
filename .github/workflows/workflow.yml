@@ -3,5 +3,5 @@ jobs:
   Phigros:
     runs-on: ubuntu-22.04
     steps:
-    - use: actions/checkout@v4
+    - uses: actions/checkout@v4
     - run: python3 taptap.py
