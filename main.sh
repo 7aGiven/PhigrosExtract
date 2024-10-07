@@ -9,9 +9,10 @@ echo $1\n > secret.txt
 git config --global user.name '7aGiven'
 git config --global user.email 'a@gmail.com'
 git config --global -l
-git clone https://github.com/7aGiven/Phigros_Resource/
+git clone https://$1@github.com/7aGiven/Phigros_Resource/
 cd Phigros_Resource
-echo 1234 > t.txt
+echo '1234' > t.txt
+echo 0
 git add .
 echo 1
 git commit -m "Gitub Action"
