@@ -1,0 +1,5 @@
+jobs:
+  Phigros:
+    runs-on: ubuntu-latest
+    step:
+    - run: wget -O Phigros.apk `python3 taptap.py`
