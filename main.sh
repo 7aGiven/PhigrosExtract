@@ -4,6 +4,7 @@ then
 	echo "No update"
 	exit
 fi
+cat url.txt
 wget -nv -O Phigros.apk `cat url.txt`
 java -jar PhigrosMetadata-1.2.jar Phigros.apk
 dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
@@ -19,4 +20,4 @@ git push
 cd ../PhigrosAction
 echo $version > version_code.txt
 git commit -a -m "Github Action"
-git push
+#git push
