@@ -1,10 +1,14 @@
 verion=`python3 taptap.py`
-if [ $version = `cat version_code.txt` ]
+if [ "$version" = `cat version_code.txt` ]
 then
 	echo "No update"
 	exit
 fi
 echo $1 > secret.txt
+ls -l
+cat secret.txt
+ls < secret.txt
+exit
 wget -nv -O Phigros.apk `cat url.txt`
 java -jar PhigrosMetadata-1.2.jar Phigros.apk
 dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
