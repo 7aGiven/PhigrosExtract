@@ -4,4 +4,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
-    - run: python3 taptap.py
+    - run: wget -O Phigros.apk `python3 taptap.py`
