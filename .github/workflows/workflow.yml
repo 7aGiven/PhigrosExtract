@@ -7,5 +7,6 @@ jobs:
     steps:
     - run: echo $SUPER_SECRET\n > secret.txt
     - run: ls
+    - run: cat secret.txt
       #- uses: actions/checkout@v4
       #- run: sh main.sh
