@@ -2,9 +2,8 @@ on: workflow_dispatch
 jobs:
   Phigros:
     runs-on: ubuntu-22.04
+    env:
+      SUPER_SECRET: ${{ secrets.PERS }}
     steps:
     - uses: actions/checkout@v4
     - run: sh main.sh
-    - uses: actions/upload-artifact@v4
-      with:
-        path: h.py

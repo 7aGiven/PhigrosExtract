@@ -1,6 +1,6 @@
 {
   "DumpMethod": false,
-  "DumpField": true,
+  "DumpField": false,
   "DumpProperty": false,
   "DumpAttribute": false,
   "DumpFieldOffset": false,
