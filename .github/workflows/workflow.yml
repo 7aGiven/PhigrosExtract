@@ -1,4 +1,7 @@
-on: workflow_dispatch
+on:
+  workflow-dispatch:
+  schedule:
+  - cron: '5 9 * * *'
 jobs:
   Phigros:
     runs-on: ubuntu-22.04
