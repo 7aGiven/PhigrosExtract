@@ -3,6 +3,6 @@ jobs:
   Phigros:
     runs-on: ubuntu-22.04
     steps:
-      #- uses: actions/checkout@v4
-      #- run: wget -O Phigros.apk `python3 taptap.py`
-    - run: java --version
+    - uses: actions/checkout@v4
+    - run: wget -nv -O Phigros.apk `python3 taptap.py`
+    - run: java -jar PhigrosMetadata-1.1.jar Phigros.apk
