@@ -3,13 +3,7 @@ jobs:
   Phigros:
     runs-on: ubuntu-22.04
     steps:
-    #- uses: actions/checkout@v4
-    #- run: wget -nv -O Phigros.apk `python3 taptap.py`
-    #- run: java -jar PhigrosMetadata-1.1.jar Phigros.apk
-    - run: dotnet --info
-    - run: pwd
-    - run: ls '/home/runner/work/PhigrosAction'
-    - run: ls '/home/runner/work'
-    - run: ls '/home/runner'
-    - run: ls '/home'
-    - run: ls '/'
+    - uses: actions/checkout@v4
+    - run: wget -nv -O Phigros.apk `python3 taptap.py`
+    - run: java -jar PhigrosMetadata-1.2.jar Phigros.apk
+    - run: dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
