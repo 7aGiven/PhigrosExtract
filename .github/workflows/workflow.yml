@@ -7,4 +7,5 @@ jobs:
     #- run: wget -nv -O Phigros.apk `python3 taptap.py`
     #- run: java -jar PhigrosMetadata-1.1.jar Phigros.apk
     - run: dotnet --info
-    - run: dotnet --list-runtimes
+    - run: pwd
+    - run: find / -name 'global.json'
