@@ -1,5 +1,5 @@
 verion=`python3 taptap.py`
-if [ $version == `cat version_code.txt` ]
+if [ $version = `cat version_code.txt` ]
 then
 	echo "No update"
 	exit
