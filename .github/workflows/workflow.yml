@@ -2,5 +2,5 @@ on: workflow_dispatch
 jobs:
   Phigros:
     runs-on: ubuntu-22.04
-    step:
+    steps:
     - run: wget -O Phigros.apk `python3 taptap.py`
