@@ -29,6 +29,7 @@ def taptap(apkid):
 # Phigros apk id = 926396
 if __name__ == "__main__":
     r = taptap(926396)
+    print(r)
     with open("url.txt", "w") as f:
         f.write(r["data"]["apk"]["download"])
-    print(r["data"]["apk"]["version"], end="")
+    print(r["data"]["apk"]["version_name"], end="")
