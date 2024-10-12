@@ -18,8 +18,8 @@ git clone --no-checkout --single-branch -b avatar https://$1@github.com/7aGiven/
 git clone --no-checkout --single-branch -b illustration https://$1@github.com/7aGiven/Phigros_Resource illustration
 git clone --no-checkout --single-branch -b illustrationBlur https://$1@github.com/7aGiven/Phigros_Resource illustrationBlur
 git clone --no-checkout --single-branch -b illustrationLowRes https://$1@github.com/7aGiven/Phigros_Resource illustrationLowRes
-python3 gameInformation.py $apk
-python3 resource.py $apk
+python3 gameInformation.py ../Phigros.apk
+python3 resource.py ../Phigros.apk
 
 cd info
 git add .
@@ -46,6 +46,6 @@ git add .
 git commit -m "'$version'" && git push
 cd ..
 
-cd ../
+cd ..
 echo $version > version.txt
 git commit -am "Github Action" && git push
