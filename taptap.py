@@ -31,4 +31,4 @@ if __name__ == "__main__":
     r = taptap(926396)
     with open("url.txt", "w") as f:
         f.write(r["data"]["apk"]["download"])
-    print(r["data"]["apk"]["version_code"], end="")
+    print(r["data"]["apk"]["version"], end="")
