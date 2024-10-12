@@ -48,4 +48,4 @@ cd ..
 
 cd ..
 echo $version > version.txt
-git commit -am "Github Action" && git push
+git commit -am "'$version'" && git push
