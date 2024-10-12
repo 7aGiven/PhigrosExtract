@@ -1,15 +1,15 @@
 on:
   workflow_dispatch:
   schedule:
-  - cron: '5 9 * * *'
+  - cron: '5 9 * * 5,6'
 jobs:
   Phigros:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     env:
       SUPER_SECRET: ${{ secrets.PERS }}
     steps:
     - run: |
-        git config --global user.name '7aGiven'
-        git config --global user.email 'a@gmail.com'
+        git config --global user.name 'GithubAction'
+        git config --global user.email 'seed@gmail.com'
         git clone https://$SUPER_SECRET@github.com/7aGiven/PhigrosAction .
     - run: sh main.sh $SUPER_SECRET
