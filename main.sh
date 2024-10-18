@@ -5,6 +5,8 @@ then
 	echo "No update"
 	exit
 fi
+pip install UnityPy~=1.10.0
+pip install fsb5
 git clone --single-branch -b master https://$1@github.com/7aGiven/Phigros_Resource
 wget -nv -O Phigros.apk `cat url.txt`
 java -jar PhigrosMetadata-1.2.jar Phigros.apk
