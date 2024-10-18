@@ -11,5 +11,5 @@ jobs:
     - run: |
         git config --global user.name 'GithubAction'
         git config --global user.email 'seed@gmail.com'
-        git clone https://$SUPER_SECRET@github.com/7aGiven/PhigrosAction .
+        git clone https://$SUPER_SECRET@github.com/7aGiven/PhigrosExtract .
     - run: sh main.sh $SUPER_SECRET
