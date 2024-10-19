@@ -15,7 +15,7 @@ dotnet DummyDllToPythonTemplate.dll -a DummyDll/Assembly-CSharp.dll -i DummyDll/
 
 cd Phigros_Resource
 git commit -am "$version" && git push
-git clone --no-checkout --single-branch -b info https://$1@github.com/7aGiven/Phigros_Resource info
+git clone --single-branch -b info https://$1@github.com/7aGiven/Phigros_Resource info
 git clone --no-checkout --single-branch -b avatar https://$1@github.com/7aGiven/Phigros_Resource avatar
 git clone --no-checkout --single-branch -b illustration https://$1@github.com/7aGiven/Phigros_Resource illustration
 git clone --no-checkout --single-branch -b illustrationBlur https://$1@github.com/7aGiven/Phigros_Resource illustrationBlur
