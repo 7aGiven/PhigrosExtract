@@ -20,6 +20,8 @@ git clone --no-checkout --single-branch -b avatar https://$1@github.com/7aGiven/
 git clone --no-checkout --single-branch -b illustration https://$1@github.com/7aGiven/Phigros_Resource illustration
 git clone --no-checkout --single-branch -b illustrationBlur https://$1@github.com/7aGiven/Phigros_Resource illustrationBlur
 git clone --no-checkout --single-branch -b illustrationLowRes https://$1@github.com/7aGiven/Phigros_Resource illustrationLowRes
+git clone --no-checkout --single-branch -b chart https://$1@github.com/7aGiven/Phigros_Resource chart
+git clone --no-checkout --single-branch -b music https://$1@github.com/7aGiven/Phigros_Resource music
 python3 gameInformation.py ../Phigros.apk
 python3 resource.py ../Phigros.apk
 
