@@ -47,6 +47,16 @@ git add .
 git commit -m "$version" && git push
 cd ..
 
+cd chart
+git add .
+git commit -m "$version" && git push
+cd ..
+
+cd music
+git add .
+git commit -m "$version" && git push
+cd ..
+
 cd ..
 echo $version > version.txt
 git commit -am "$version" && git push
