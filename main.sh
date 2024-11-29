@@ -27,7 +27,8 @@ python3 gameInformation.py ../Phigros.apk
 python3 resource.py ../Phigros.apk
 
 cd info
-git commit -am "$version" && git push
+git add .
+git commit -m "$version" && git push
 cd ..
 
 cd avatar
