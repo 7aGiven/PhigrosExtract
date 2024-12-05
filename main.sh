@@ -12,7 +12,7 @@ git clone --single-branch -b master https://$1@github.com/7aGiven/Phigros_Resour
 wget -nv -O Phigros.apk `cat url.txt`
 java -jar PhigrosMetadata-1.2.jar Phigros.apk
 dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
-dotnet DummyDllToPythonTemplate.dll -a DummyDll/Assembly-CSharp.dll -i DummyDll/Il2CppDummyDll.dll -p Phigros_Resource/h.py
+dotnet TypeTreeGeneratorCLI.dll -p DummyDll/ -a Assembly-CSharp.dll -v 2019.4.31f1c1 -c GameInformation -c GetCollectionControl -c TipsProvider -d json_min -o Phigros_Resource/typetree.json
 
 cd Phigros_Resource
 git commit -am "$version" && git push
