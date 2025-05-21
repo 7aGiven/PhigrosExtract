@@ -27,6 +27,7 @@ python3 gameInformation.py ../Phigros.apk
 python3 resource.py ../Phigros.apk
 
 cd info
+echo $version > version.txt
 git commit -am "$version" && git push
 cd ..
 
