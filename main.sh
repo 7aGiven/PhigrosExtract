@@ -10,10 +10,12 @@ pip install UnityPy~=1.10.0
 pip install fsb5
 git clone --single-branch -b master --depth 1 https://$1@github.com/7aGiven/Phigros_Resource/
 wget -nv -O Phigros.apk `cat url.txt`
+
 #java -jar PhigrosMetadata-1.2.jar Phigros.apk
 # dotnet Il2CppDumper.dll libil2cpp.so global-metadata.dat .
-unzip Phigros.apk assets/bin/Data/Managed/Metadata/global-metadata.dat
-dotnet Il2CppDumper.dll libil2cpp.so assets/bin/Data/Managed/Metadata/global-metadata.dat .
+unzip Phigros.apk lib/armeabi-v7a/libil2cpp.so assets/bin/Data/Managed/Metadata/global-metadata.dat
+dotnet Il2CppDumper.dll lib/armeabi-v7a/libil2cpp.so assets/bin/Data/Managed/Metadata/global-metadata.dat .
+
 dotnet TypeTreeGeneratorCLI.dll -p DummyDll/ -a Assembly-CSharp.dll -v 2019.4.31f1c1 -c GameInformation -c GetCollectionControl -c TipsProvider -d json_min -o Phigros_Resource/typetree.json
 
 cd Phigros_Resource
